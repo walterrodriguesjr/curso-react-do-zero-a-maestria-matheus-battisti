@@ -1,0 +1,69 @@
+SEÇÃO 1: INTRODUÇÃO 
+
+
+1-introdução do curso 
+-explicação do curso do conteúdo a ser utilizado 
+
+2-apresentação do curso 
+-sobre os módulos e os projetos 
+
+3-o que é o react? 
+-é uma biblioteca Javascript para aplicações front-end 
+-aplicações chamadas de SPA 
+-React é baseado em componentes 
+-mantido pelo facebook 
+
+4-o que é node.js?
+-node.js é uma runtime do Javascript, ou seja, biblioteca para compilar furante a execução do programa 
+-possibilita criar softwares em JS no lado do servidor, nos bastidores, o código JS roda em C++ 
+
+5-o que é o npm? 
+-npm é um gerenciador de pacotes do node 
+-possibilita utilizar bibliotecas de terceiros 
+-os módulos externos ficam em uma pasta chamada node_modules 
+-a pasta node_modules deve ser descartável, ou seja, a cada instalação do projeto baixamos todos os pacotes novamente 
+
+6-instalação do node.js no windows 
+-já instalado 
+
+7-instalação do node.js no linus
+-não necessário 
+
+8-instalação do vs code 
+-já instalado
+
+9-hello world com react 
+-react precisa ser instalado na pasta que será o projeto, via npx, e posteriormente iniciado 
+    npx create-react-app hello-world
+    npm start
+
+10-estrutura inicial do react 
+-node_modules = onde ficam as dependências do projeto (não versionada por ser muito grande)
+-public = Assets estáticos e HTML de inicialização (é o que o usuário tem acesso quando acessa)
+-src = onde são de fato programados os apps, onde vão os componentes e etc...
+-src/index.js = arquivo de inicialização do react 
+-src/App.js = componente principal da aplicação 
+
+11-extensão para o vs code para react 
+-es7 + React/Redux/React-Native snippets (já instalado) 
+-analisar os atalhos para criar uma estrutura de componente já pronta e várias outras coisas
+
+12-configurando o Emmet para o react 
+-é uma extensão nativa do vs code que ajuda a escrever HTML mais rapido, porém não vêm configurado 
+    por padrão 
+-acessa: File > Settings > Extensions e procurar o Emmet 
+    lá vamos incluir a lunguagem: javascript - javascriptreact 
+(serve para não precisar ficar fazendo o HTML todo não, e sim usar as abreviações)
+
+13-como tirar o melhor proveito deste curso 
+-sempre fazer os códigos junto 
+-fazer os exercícios 
+
+14-repositório do curso 
+-https://github.com/matheusbattisti/curso_react
+
+15-tarefa 1: praticando react 
+-ok
+
+16-conclusão da seção 
+-ok
