@@ -62,8 +62,50 @@ SEÇÃO 1: INTRODUÇÃO
 14-repositório do curso 
 -https://github.com/matheusbattisti/curso_react
 
-15-tarefa 1: praticando react 
+-tarefa 1: praticando react 
 -ok
 
-16-conclusão da seção 
+15-conclusão da seção 
 -ok
+
+
+SEÇÃO 2: FUNDAMENTOS DO REACT 
+
+
+16-introdução da seção 
+-ok 
+
+17-criando componentes
+-os componentes ficam em uma pasta criada manualmente, chamada 
+    components, nome do componente.js 
+-por padrão, cada componente inicia com a area de importação, 
+    caso houver, onde pega dados de outro componente. No corpo, 
+    é onde vai a sua funtion() que retorna a sua ação. 
+    Por último, é onde vai a sua exportação, para que o template 
+    seja recebido pelo App.js. 
+-criado novo projeto do módulos: 
+    npx create-react-app fundamentos 
+-criado em src, a pasta components, e dentro o componente 
+    FirstComponent.js 
+    feito todo processo de configurar a funtion() em arrow function 
+    e sua exportação 
+
+18-importação de componentes 
+-primeiramente o componente precisa ter seu export definido 
+-geralmente são importados em App.js, lá deve ser feito a importação 
+    do componente, em seguida inserido dentro de < />
+
+19-conhecendo o JSX 
+-JSX é o HTML dodo react 
+-ficam no return do componente 
+-pode ter apenas um elemento pai 
+-JSX é javascript rodando pelo react 
+
+20-comentários nos componentes 
+-// ou /*  */
+
+21-template expressions 
+-para interpolar JS dentro do JSX, basta envolver entre chaves { }
+
+
+
