@@ -107,5 +107,112 @@ SEÇÃO 2: FUNDAMENTOS DO REACT
 21-template expressions 
 -para interpolar JS dentro do JSX, basta envolver entre chaves { }
 
+22-hierarquia de componentes 
+-os componentes podem ser reutilizados em outros componentes, e não 
+    somente no App.js, sempre utilizando os métodos de import e export 
+
+23-eventos 
+-eventos servem para disparar alguma ação 
+-a chamada do evento faz no próprio html: onClick={nomeDaFunction}, 
+    e dentro do componente deste evento, cria-se a função a ser realizada 
+
+24-funções no evento 
+-é possível executar a lógica da função direto no HTML, porém, não 
+    é recomendado. (função in-line)
+
+25-função de renderização 
+-funções que retornam JSX 
+
+Tarefa 2: Desafio sobre os conceitos básicos de React
+-ok 
+
+26-conclusão da seção 
+-ok
+
+teste 1-Quiz sobre fundamentos 
+-ok 
+
+
+SEÇÃO 3:  AVANÇANDO EM REACT 
+
+
+27-introdução da seção 
+-ok 
+
+Tarefa: Desafio sobre criação de apps em React
+-ok 
+
+28-imagens públicas em react 
+-as imagens públicas do projeto podem ficar na pasta public 
+-quando estiverem lá, podem ser chamadas pelas tags img diretamente por: /home.jpg, pois, a pasta public 
+    fica linkada com src das imagens. Quando está em public, apenas o / mais o nome da img
+
+29-imagens em src(Assets)
+-colocar as imagens em: src/assets é uma abordagem bem utilizada 
+-em assets é preciso importar a imagem, como se fosse um componente mesmo 
+    ex: import City from './assets/city.jpg'; 
+
+30-o que são hooks? 
+- são recursos do react que tem diversas funções, evita ter que recriar funções
+-todos os hooks começam com 'use', ex: useState 
+-podemos criar os próprios hooks, os custom hook
+-hooks precisam ser importados 
+
+31-useState na prática 
+-é um dos mais utilizados 
+-utilizado para gerenciar o estado de algum dado 
+-atalho para criar o template de um componente: rafce 
+-o useState, precisa que inicie uma const de array com 2 valores, um que consome o que existe no parâmetro 
+    de useState() e o outro que seta, e o paramêtro deste, pode alterar o valor no primeiro item do array 
+
+32-renderização de listas 
+-utiliza o método map() para auxiliar 
+-o map() ajuda a listar item por item de um array, criado anteriormente dentro de um const  
+
+33-a proprioedade key 
+-iterar listar sem a proprioedade key nos gera um warning, mostrado no console 
+-quando usado o map, em seu parâmetro onde vai o item, em segundo colocamos um 'i', em seguida chamado na 
+    li com o key 
+
+34-previous state 
+-(estado anterior) 
+-ficaram dúvidas 
+
+35-renderização condicional 
+-é quando imprimimos uma parte do template baseado em uma condição 
+-interessante usar, por exemplo, em situações de usuário autenticado ou não  
+
+36-idf e else no JSX 
+-no caso, usado o if ternário 
+    ex: condicao ? bloco1 : bloco 2 
+
+37-introdução as Props 
+-permite passar valores de um componente pai para um componente filho 
+-muito útil quando os dados forem carregados via banco de dados 
+-as Props vem em um objeto no argumento da função do componente 
+-o Props é inserido no App.js e lá o dado recebe um nome 
+    já no componente que for usar o Props, ele é definido no parâmetro da função, e vai ser tratado como um objeto 
+    onde o dado for chamado no componente, entre {} chama-se props.nomeDoDado 
+-o componente pai, que no caso é App.js estão passando dados para o componente filho, que no caso é ShowUserName.js 
+-ele pode receber valores diretos, valores de variável, e valores de state 
+
+38-destructuring em props 
+-é comum passar mais de um prop em um componente 
+-para facilitar, o react permite desustruturar as propriedades que chegam, com o recurso destructuring 
+-é a forma mais moderna 
+-neste caso, não precisa chamar como na maneira anteiro. igual objeto: props.algumaCoisa 
+
+39-reaproveitamento de componente 
+-o props tem o objetivo por si só, reaprovietar componente 
+-o mesmo componente pode ser reaproveitado quantas vezes forem necessárias 
+
+40-renderização de lista em componente 
+-é uma reutilização com loop, usando o map() 
+-faz se a chamada direto no App.js, a chamada do componente vi estar dentro de um loop com map()
+
+41-Fragments 
+-são interessantes para quando precisamos ter mais de um elemento pai em um componente 
+-criamos uma tag vazia: <>...</>, e ela serve como um elemento pai 
+
 
 
