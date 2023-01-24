@@ -1,0 +1,21 @@
+p {
+    color: green;
+    background-color: black;
+}
+
+.my-comp-paragraph {
+   color: black;
+   background-color: gold; 
+}
+
+.red-title {
+    background-color: black;
+    color: red;
+    padding: 15px;
+    border: 5px solid red;
+}
+
+.title {
+    background-color: black;
+    color: white;
+}

@@ -133,7 +133,7 @@ teste 1-Quiz sobre fundamentos
 -ok 
 
 
-SEÇÃO 3:  AVANÇANDO EM REACT 
+SEÇÃO 3: AVANÇANDO EM REACT 
 
 
 27-introdução da seção 
@@ -182,7 +182,7 @@ Tarefa: Desafio sobre criação de apps em React
 -é quando imprimimos uma parte do template baseado em uma condição 
 -interessante usar, por exemplo, em situações de usuário autenticado ou não  
 
-36-idf e else no JSX 
+36-if e else no JSX 
 -no caso, usado o if ternário 
     ex: condicao ? bloco1 : bloco 2 
 
@@ -213,6 +213,78 @@ Tarefa: Desafio sobre criação de apps em React
 41-Fragments 
 -são interessantes para quando precisamos ter mais de um elemento pai em um componente 
 -criamos uma tag vazia: <>...</>, e ela serve como um elemento pai 
+
+42-a prop children 
+-consiste em, no paramêtro da função do componente, definir um children desestruturado, e, no corpo da função 
+    do mesmo componente, definir a children também.
+    no App.js, o componente em questão deve estar entre tag dupla do componente(<componente></componente>)
+        e dentro disso, pode se incluir outras tags HTML 
+
+43-função com prop 
+-consiste em, um componente pai, que detém a function(), porém, é acionada por um componente filho, o qual 
+    contém o método de click em um button, e sua prop quando acionada no elemento pai, chama a referida function() 
+
+44-state lift 
+-conhecido como elevação de state, que é quando um valor é elevado do componente filho para o componente pai 
+-geralmente temos um componente que usa o state e outro que o altera 
+
+Desafio 4 
+-ok 
+
+45-conclusão da seção 
+-ok 
+
+
+SEÇÃO 4: REACT E CSS 
+
+
+46-introdução da seção 
+-ok 
+
+47-css global 
+-é utilizado para estilizar diversos elementos em comum ou fazer um reset no css 
+-utilizamos o arquivo index.css para isso, que está na pasta src 
+-feito reset css em index.css 
+
+48-CSS de componentes 
+-é um CSS feito para um componente específico, tem o mesmo nome do componente, porém com a extensão .css 
+-precisa este .css, ser importando no seu componente 
+-para inserir um class em uma tag, diferente do HTML comum, usa-se o className 
+
+49-CSS inLine 
+-é igual ao css inline do CSS comum 
+-porém, css inline deve-se ser evitado, por boas práticas de programação 
+
+50-CSS inline dinâmico 
+-maniera mais avançada do inline comum 
+-aplica estilo baseado em uma condicional 
+-usa-se a condicional ternário dentro do próprio style 
+  
+51-classes dinâmicas 
+-consiste em aplicar lógica para mudar a classe de CSS de um elemento 
+-usa o if ternário, condicionando entre 2 classes css
+-as classes ficam isoladas no arquivo .css 
+
+52-CSS modules 
+-é um recurso de CSS scoped 
+-ele vai ser exclusivo do componente, não vaza 
+-o nome será: Componente.module.css 
+-precisa ser importado também 
+
+Tarefa 5 - desafio sobre react com css 
+-ok 
+
+53-coclusão da seção 
+-ok 
+
+
+SEÇÃO 5: FORMULÁRIOS COM REACT
+
+
+54-
+
+
+
 
 
 
