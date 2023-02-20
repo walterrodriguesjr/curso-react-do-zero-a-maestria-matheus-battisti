@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": 2,
+      "name": "Calça vermelha",
+      "price": 90
+    },
+    {
+      "id": 3,
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "name": "teste",
+      "price": "111",
+      "id": 4
+    },
+    {
+      "name": "asasasa",
+      "price": "222",
+      "id": 5
+    },
+    {
+      "name": "asaas",
+      "price": "22323",
+      "id": 6
+    },
+    {
+      "name": "ffrff",
+      "price": "443",
+      "id": 7
+    },
+    {
+      "name": "ddsd",
+      "price": "22222",
+      "id": 8
+    },
+    {
+      "name": "sasasa",
+      "price": "444",
+      "id": 9
+    },
+    {
+      "name": "sasaas",
+      "price": "222",
+      "id": 10
+    },
+    {
+      "name": "wsdasas",
+      "price": "66",
+      "id": 11
+    },
+    {
+      "name": "mouse",
+      "price": "60",
+      "id": 12
+    }
+  ]
+}

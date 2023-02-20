@@ -281,59 +281,204 @@ Tarefa 5 - desafio sobre react com css
 SEÇÃO 5: FORMULÁRIOS COM REACT
 
 
-54 a 64 OK 
+54-introdução da seção 
+-ok 
+
+55-criando formulários 
+-usa-se como no JS puro, a tag <form> 
+-as labels dos inputs contém o atributo htmlFor, que deve ter o valor do name do input 
+-NÃO UTILIZAMOS ACTION, pois o processamento será feito de forma assíncrona 
+
+56-label envolvendo input 
+-é um padrão comum 
+-isso faz com ue, o atributo for se torne opcional 
+-simplica a estrutura do HTML 
+
+57-gerenciamento de dados do input 
+-para manipular os valores ods inputs, usa-se o hook useState 
+-possibilita armazenar na variável e utilizar o set para alterar o valor 
+-necessita uso de uma função para alterar o valor no evento onChange
+
+58-alteração de state inline 
+-quando temos vários inputs podemos realizar a manipulação de forma mais simples 
+-basicamente, é criada uma função inline no onChange 
+-vai alterar o valor do state com o método set, da mesma forma que a função isolada 
+
+59-envio de form 
+-para enviar um from, utilizamos o evento onSubmit 
+-ele chamará uma função, e nesta devemos lembrar de parar a submissão com o preventDefault 
+-criado um componente para testar conhecimento de form, Teste.js 
+
+60-controlled input 
+-permite mais flexibilidade nos forms do react 
+-necessita igualar o valor ao state 
+-muito usado em form de edição, qunado os dados vem do back-end 
+
+61-resetando formulários 
+-com controlled input limpar o form será mais fácil 
+-basta atribuir um valor de uma string vazia aos states e pronto 
+-será feito após o envio 
+
+62-textarea no react 
+-é considerado um input de text normal 
+-utiliza o value para alterar o state inicial 
+-usa o evento onChange para modificar o valor do state 
+
+63-select no react 
+-semelhante a outros inputs 
+-usa o onChange 
+
+64-conclusão da seção 
+-ok 
 
 
-SEÇÃO 6: PROJETO: SECRET WORD 
+SEÇÃO 6: PROJETO:SECRET WORD 
 
-65 a 80 Ok 
+
+65-apresentação do projeto
+-ok 
+
+66-criando o projeto 
+-configurado o o projeto 
+
+67-ajustes gerais 
+-congifurado CSS inicial de App.css e index.css 
+
+68-finalizando tela inicial 
+-ok 
+
+69-criando componentes do projeto 
+-o projeto tem basicamente 3 estagios de componentes: StartScreen, Game e GameOver, cada um com seu CSS 
+-o arquivo que simula dados de banco, words.js, é importado diretamente em App.js 
+-um const de nome stages, do tipo array de objetos, contém os 3 estágios do projeto 
+-o wordList importado de words.js, vai para dentro de uma const chamada words via useState
+
+70-alterando os estágios do jogo 
+-através de 3 funções criadas em App.js (startGame(), verifyLetter(), retry()) atreladas a ações onClick={}
+   de seus respectibos componentes, foi feito as ações de mudanças de tela 
+
+71-escolhendo palavra e categoria de forma aleatória 
+-em App.js, criado a função pickWordAndCategory() que fica responsável por manipular, e randomizar as 
+    palavras de chave e valor dos dados de words.js 
+-dentro da função startGame(), feito as separações por palavras 
+
+72-estruturando componentes do jogo 
+-configurado o HTML de Game.js 
+
+73-CSS da tela do jogo 
+-configurado CSS de Game.css 
+
+74-consumindo states do jogo 
+-funções incluídas em App.js, onde chama o componente Game e em seguida, em seu próprio componente como prop 
+
+75-evento de inserção de letra
+-ok 
+
+76-processando letras válidas e inválidas 
+-ok 
+
+77-lógica para o fim do jogo 
+-ok 
+
+78-finalizando tela de fim de jogo 
+-ok 
+
+79-condição de vitória 
+-ok 
+
+80-conclusão do projeto 
+ok 
 
 
 SEÇÃO 7: REQUISIÇÕES HTTP COM REACT 
 
 
 81-introdução da seção 
--trata de fazer integração com o back end 
+-ok
 
 82-criando projeto com JSON server 
--JSON server é um pacote do npm 
--ele simula uma API, possibilitando fazer requisições 
+-JSON server é um pacote npm, ele simula uma API, possibilitando requisições HTTP 
 -instalando o JSON server 
-    bpm i json-server 
--precisa ser configurado em package.json 
-    em scripts: 
-         "server": "json-server --watch data/db.json"
+-configura no package.json
+    npm i json-server
+    npm run server
+-se não abrir no chrome, tentar no mozilla que é certeza 
 
-83-a importância do useEffect 
--o useEffect faz com que determinada ação seja executada apenas uma vez (quando renderiza a tela)
--estará sempre presente nas requisições assíncronas, pois o useEffect possui um array de dependências 
-    que pode ser inserida quais funções serão executada no useEffect 
+83-a importância do useState 
+-faz com que determinada ação seja executada apenas uma vez 
+-é um hook do react 
+-sempre estará presente nas requisições assíncronas 
 
 84-resgatando dados da API 
--primeiramente, ter um local para salvá-los(useState)
--renderizar a chamada da APi apenas uma vez(useEffect)
--um meio de fazer a requisição assíncrona(Fetch API)
+-recursos utilizados: 
+    primeiramente ter um local para salvá-los(useState);
+    renderizar a chamada a API apenas uma vez(useEffect);
+    um meio de fazer a requisição assíncrona(fetch API);
 
-85-adicionando dados com react 
--primeiramente, precisa resgatar os dados inseridos no form via useState (value e onChange e onSubmit)
--reunir os dados em um função de submit e enviar via request por fetch post 
--no fetch POST, é necessário configurar o method, que é post, o headers que é o tipo de dado enviado, e o 
-    body, que contém de fato os dados a serem submetidos 
 
-86-carregamento dinâmico de dados 
--se a requisição foi feita com sucesso, podemos adiionar o item a lista após o request 
--usa-se o set do useState para isso 
--usando o setProduct, cria-se uma função que utiliza os dados antigos(spread operator) e em seguida uma const 
-    contendo os dados atualizados, isso ainda dentro da função de submit 
+SEÇÃO 10: PROJETO: MINIBLOG (REACT ROUTER, HOOKS, CONTEXT, FIREBASE, AUTENTICAÇÃO)
 
-87-Custom hook para resgate de dados 
--dividindo funções para poderem ser aproveitadas em hooks 
--está técnica é chamada de custom hooks 
--é padrão usar uma pasta hooks 
--cria-se uma função e exporta ela 
 
-88-refatorando o POST 
--mesmo conceito de usar um hook especifico para o POST 
--nem sempre utilizar um hook é a melhor estratégia 
+115-apresentação do projeto 
+-ok 
 
-89-
+116-setub do firebase 
+https://firebase.google.com
+-criado projeto miniblog no firebase 
+
+117-criando o projeto 
+-npx create-react-app miniblog
+-npm i firebase
+-configuração do projeto 
+
+118-integrando o firebase ao react 
+-criado a pasta firebase e dentro, o arquivo config.js 
+
+119-configurando o React Router 
+-instalando o react-router-dom 
+    npm i react-router-dom
+-criado componentes em src. criado pasta pages e dentro arquivos js e css de Home e About 
+-em App.js criado a esturtura de BrowserRouter, Routes e Route 
+
+120-adicionando componente de navbar 
+-em src, criada a pasta components 
+-em components. criado os arquivos js e css de Navbar e Footer 
+
+121-CSS navbar e footer 
+-criado os estilos de navbar e footer 
+
+122-estilos gerais do projeto 
+-aplicada a fonte do google fonts, montserrat, todos os tamanhos 
+-configurado o index.css 
+
+123-criando formulário de cadastro 
+-na pasta pages, criado as pastas e arquivos js e css de Login e Register 
+-estruturado o HTML do form de Register.js 
+
+124-CSS do formulário 
+-criado o css dos form em index.css 
+
+125-States do form de cadastro 
+-const Register() (método) detém os useState de todos os inputs 
+-const handleSubmit() (método) ativado quando o form é submetido. criando a const user, e inserindo 
+    dentro dela, os states de dados de todos os inputs do form de Register 
+
+126-criando hook de autenticação 
+-criado useAuthtenication.js e a lógica de autenticação 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
