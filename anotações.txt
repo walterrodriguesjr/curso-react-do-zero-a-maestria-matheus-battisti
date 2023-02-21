@@ -303,6 +303,8 @@ SEÇÃO 7: REQUISIÇÕES HTTP COM REACT
 -precisa ser configurado em package.json 
     em scripts: 
          "server": "json-server --watch data/db.json"
+-para rodar o servidor local (mocado)
+    npm run server
 
 83-a importância do useEffect 
 -o useEffect faz com que determinada ação seja executada apenas uma vez (quando renderiza a tela)
@@ -336,4 +338,44 @@ SEÇÃO 7: REQUISIÇÕES HTTP COM REACT
 -mesmo conceito de usar um hook especifico para o POST 
 -nem sempre utilizar um hook é a melhor estratégia 
 
-89-
+89-estado de loading 
+-quando fazemos uma requição para a API, exist um intervalo de loading entre a requisição e o 
+    recebimento da resposta, 
+-precisa identificar quando começa e termina o estado de loading 
+
+90-loading no POST
+-podemos bloquear ações indevidas em outras request também, como no POST 
+-podendo, por exemplo, remover a ação de adicionar outro item enquanto o request ainda não finalizou 
+
+91-tratando erros 
+-usa-se o try/catch para tratar erros de requisições 
+
+Tarefa: Desafio sobre requisições HTTP
+ok 
+
+92-conclusão da seção 
+-ok 
+
+
+SEÇÃO 8: REACT ROUTER 
+
+
+93-introdução da seção 
+-ok 
+
+94-o que é o react router? 
+-é um pacote do próprio react, serve para criar estruturas de rotas 
+-permite que a SPA teja diversas páginas, sem refresh na página 
+-o pacote precisa ser instalado
+
+Tarefa 7: Desafio sobre projetos em React com dependências
+cria um novo projeto react 
+em seguida, instalar a biblioteca react-router-dom 
+-instalar também o json server 
+-colocar pelo menos 3 produtos da seção anterior no arquivo db.json server 
+-criar o script de inicialização json-server
+-npm i json-server react-router-dom
+-npm run server para rodar o db.json 
+
+
+
