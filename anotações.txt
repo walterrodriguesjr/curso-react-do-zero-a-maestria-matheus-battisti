@@ -421,7 +421,19 @@ em seguida, instalar a biblioteca react-router-dom
 -utilizamos o hook useSearchParams para obte-los 
 -com este recurso fica fácil fazer uma funcionalidade de busca no sistema 
 
-104-
+104-redirecionamento de URL 
+-
+
+105-conclusão da seção 
+-ok 
+
+
+SEÇÃO 9: CONTEXT API DO REACT
+
+
+106-
+
+
 
 
 
