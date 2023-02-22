@@ -377,5 +377,51 @@ em seguida, instalar a biblioteca react-router-dom
 -npm i json-server react-router-dom
 -npm run server para rodar o db.json 
 
+95-confugurando o react router 
+-é necessário importar 3 elementos do react-router-dom 
+    BrowserRouter: define onde a área do nosso app que vai trocar as páginas 
+    Routes: define as rotas 
+    Route: um elemento deste para cada rota, configurar com path e componente da rota 
+
+96-navegação entre páginas 
+-é necessário importar o Link, também do react-router-dom 
+-é no Link que definimos onde será clicado, e para qual componente será direcionado o usuário 
+-geralmente está em um navbar 
+-o Link geralmente fica dentro do BrowserRouter, justamente por ter elementos do react-router-dom
+
+97-carregando dados 
+-carregando dados usando o hook useFetch 
+-depois é possível utilizá-lo para o carregamento de dados individuais 
+-os dados do componente useFetch foram importados em Home.js 
+
+98-rotas dinâmicas 
+-criado em Home.js, no final do loop map, um Link que, recebendo o id do produto, direciona para o componente
+    Product.js, o qual, usando o useParamns do react, recebendo o id do produto, listando seus dados 
+    individualmente por id 
+
+99-carregamento dinâmico de dados 
+-product.js recebe useFetch, colocando os parâmetro dentro de uma const, e trazendo os dados individuais 
+
+100-nested router 
+-serve para termos acesso ao parâmetro da URL também 
+-criada uma sub-página de mais informações do produto 
+
+101-pagina 404 
+-é possível criar uma página 404 customizada
+-é necessário criar o componente desta página, e no App.js, definir o path como * 
+-desta forma, qualquer rota que não ecista, cairá neste componente 
+
+102-Link ativo 
+-para ter acesso a uma modificação para os links ativos vamos trocar o Link pelo NavLink 
+-neste elemento temos acesso a um valor chamado isActive 
+-ou seja, podemos ativar uma classe se a rota atual for a que está no atributo to 
+
+103-search params 
+-é um recurso que permite obter o que vem da URL em forma de parâmetro, ex: produto?q=camisa 
+-utilizamos o hook useSearchParams para obte-los 
+-com este recurso fica fácil fazer uma funcionalidade de busca no sistema 
+
+104-
+
 
 
