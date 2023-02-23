@@ -431,9 +431,66 @@ em seguida, instalar a biblioteca react-router-dom
 SEÇÃO 9: CONTEXT API DO REACT
 
 
-106-
+106-introdução da seção 
+-context API = é uma funcionalidade que serve para transportar o valor de algum dado através dos componentes 
+
+107-o que é context API? 
+-recurso que facilita o compartilhamento de um estado entre componentes 
+-ou seja, quando precisamos de dados globais, provavelmente precisamos utilizar o Context 
+-o Context precisa encapsular os componentes, que receberão seus valores, geralmentecolocamos no App.js ou index.js 
+-geralmente ficam na pasta context 
+-a idéia é, consumir e alterar dados que vão se tornar globais na aplicação 
+
+Tarefa 8: Criação de projeto e inicialização de dependências
+-instalado e configurado o projeto inicial 
+    pacote react, react-router-dom, criado as 3 pages, components 
+
+108-criando contexto 
+-criando o Context 
+-primeira letra sempre maiúscula, sempre termina com COntext: SomeContext.js
+-por convenção, deve ficar na pastar context em src 
+-onde for utilizar o valor do contexto, o arquivo precisa ser importado 
+-criado o arquivo CounterContext.js, lá foi importado o hook createContext, e em seguida exportado o mesmo recebendo o metodo createContext()
+
+109-criando Provider 
+-o Provider vai delimitar onde o contexto é utilizado 
+-é criado uma espécie de componente com a prop children 
+-este Provider deve encapsular os demais componentes em que precisamos consultar ou alterar o valor 
+-geralmente fica em App.js ou index.js 
+-após isso, é possível compartilhar o valor do contexto em todos os componentes 
+
+110-alterando contexto 
+-para alterar o valor do contexto precisamos criar um componente que utilize a função da mudança de contexto
+-esta mudança ocorrerá no Context e poderá ser consumida por todos os componentes que recebem o contexto 
+- o contexto de ChangeCounter foi usado em Home, e reutilizado em About e Products 
+
+111-refatorando contexto para hooks
+-é possível criar um hook para utilizar o contexto, sendo assim, não sendo necessário importar o useContext em todos os lugares, 
+    somente o hook 
+-o componente useCounterContext.js contém o context e seus hooks necessários (useContext etc...) em seguida ele apenas é importado e utilizado em cada componente 
+
+112-criando um contexto mais complexo 
+-contextos mais complexos podem ter variações no comportamento 
+-para isso, utilizamos o hook 'useReducer', que é como useState, mas para controle de dados complexos 
+-no reducer teremos diferentes ações com um switch
+-na aplicação vamos consumir o estado atual do dado que está no reducer 
+-o reducer é como um useState, porem controla mais coisas 
+
+113-alterando contexto complexo 
+-usando a função chamada dispatch(), ela estará no reducer 
+
+114-conclusão da seção 
+-ok 
 
 
+Seção 10: Projeto: MiniBlog (React Router, Hooks, Context, Firebase, Autenticação)
+(POR FAZER) 
 
+
+SEÇÃO 11: ENTENDA OS HOOKS DO REACT 
+
+
+-156-introdução da seção 
+-ok
 
 
