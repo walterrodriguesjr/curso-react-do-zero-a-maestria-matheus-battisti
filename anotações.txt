@@ -502,6 +502,17 @@ SEÇÃO 11: ENTENDA OS HOOKS DO REACT
 -o input recebe um value com o get do state, ou seja, tudo que é inserido ou apagado do input 
     pode ser monitorado pelo state 
 -o onChange que recebe o set do state, reenvia para o get do state o que é digitado no input
+
+159-useReducer 
+-o use reducer tem a mesma função que o useState, que é gerenciar valores, porém, possibilita 
+    executar uma função na hora da alteração do valor (como o use state, tem 2 parâmetros, o primeiro com valor atual, o segundo realiza um ação/método)
+    porém, em seguida, ao chamar o método usReducer() já constrói uma função 
+-o useReducer recebe um valor para gerenciar e uma função para alterar este valor 
+-necessário importar o {useReducer} do próprio react 
+
+160-useReducer com actions 
+-embora seja parecido com useState, o useReducer é feito para operações mais complexas, 
+    usando a estrutura switch com actions 
 -
 
 
