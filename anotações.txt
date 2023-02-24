@@ -490,7 +490,21 @@ Seção 10: Projeto: MiniBlog (React Router, Hooks, Context, Firebase, Autentica
 SEÇÃO 11: ENTENDA OS HOOKS DO REACT 
 
 
--156-introdução da seção 
+156-introdução da seção 
 -ok
+
+157-revendo o useState (GERENCIAR VALORES)
+-um dos principais hooks do react 
+-seu propósito é, gerenciar valores, sendo possível consultar valores e alterar 
+-assim, sendo permitido re-renderizar um componente
+
+158-useState e Inputs 
+-o input recebe um value com o get do state, ou seja, tudo que é inserido ou apagado do input 
+    pode ser monitorado pelo state 
+-o onChange que recebe o set do state, reenvia para o get do state o que é digitado no input
+-
+
+
+
 
 
