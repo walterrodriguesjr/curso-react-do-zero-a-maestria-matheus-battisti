@@ -484,7 +484,56 @@ Tarefa 8: Criação de projeto e inicialização de dependências
 
 
 Seção 10: Projeto: MiniBlog (React Router, Hooks, Context, Firebase, Autenticação)
-(POR FAZER) 
+
+
+115-apresentação do projeto 
+-ok 
+
+116-setup do firebase 
+-site do firebase 
+    https://firebase.google.com 
+-dentro de: ir para o console
+    adicionar projeto 
+    criar e nomear o projeto 
+    adicionar novo app (web) e nome-lo 
+-em Authenbtication, escolher o de senha e email 
+
+117-criando op projeto 
+-criado a pasta 10-MINIBLOG 
+-criado o projeto react 
+    npx create-react-app miniBlog
+-instalando o pacote firebase 
+    npm i firebase
+-organização padrão inicial do App.js 
+
+118-integrando Firebase ao React 
+-criado em miniblog/src a pasta firebase e o arquivo config.js 
+    dentro configurado a const db que usa o método getFirebase(app)
+    precisa importar o método 
+
+119-configurando o react router 
+-instalar a biblioteca react-router-dom 
+    npm i react-router-dom
+-importando as bibliotecas de router em App.js 
+    import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+-em src criada a pasta pages 
+    criado as pastas, arquivos js e css de: Home, About
+    nos arquivos css, usado o padrão module.css 
+-em App.js, importado os componentes de Home e About
+-criado a estrutura de? BrowserRouter, Routes, Route 
+
+120-adicionando componente de navbar 
+-em src, criada a pasta components 
+    dentro criado: Navbar, Footer, js e css 
+    inseridos em App.js 
+-em Navbar, inserido os navlink e configurado a navegação 
+    importada a biblioteca de NavLink 
+-configuração inicial de Footer.js 
+
+121
+
+
+
 
 
 SEÇÃO 11: ENTENDA OS HOOKS DO REACT 
@@ -568,7 +617,15 @@ SEÇÃO 11: ENTENDA OS HOOKS DO REACT
 
 173-react developer tools 
 -ja instalada 
--
+
+174-useDebugValue 
+-usado para debug 
+-aconselhado ser usado em custom hooks 
+
+175-conclusão da seção
+-ok 
+
+
 
 
 
