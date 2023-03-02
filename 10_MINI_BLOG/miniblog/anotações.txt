@@ -530,7 +530,26 @@ Seção 10: Projeto: MiniBlog (React Router, Hooks, Context, Firebase, Autentica
     importada a biblioteca de NavLink 
 -configuração inicial de Footer.js 
 
-121
+121-CSS navbar e footer 
+-criado os referidos CSS em seus arquivos module.css 
+
+122-estilos gerais do projeto 
+-usado o google fonts 
+    montserrat, todos os tamanhos 
+    o link da font é colada em public/index.html 
+-em index.css, criado o css global 
+
+123-criando formulário de cadastro 
+-criando em pages, a pasta, componente e css de Login e Register 
+-em App.js, impmentado as Route de Login e Register 
+-em Navbar.js, inseridas as <li> de login e register 
+-configurando o componente de Register 
+    importa useState e useEffect 
+    criado o HTML do <form> de Register 
+
+124-CSS do formulário
+-configurado o CSS fo <form> de Register.module.css
+
 
 
 
