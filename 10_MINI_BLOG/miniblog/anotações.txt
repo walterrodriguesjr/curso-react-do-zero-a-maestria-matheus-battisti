@@ -550,6 +550,9 @@ Seção 10: Projeto: MiniBlog (React Router, Hooks, Context, Firebase, Autentica
 124-CSS do formulário
 -configurado o CSS fo <form> de Register.module.css
 
+125-states do form de cadastro 
+-
+
 
 
 
