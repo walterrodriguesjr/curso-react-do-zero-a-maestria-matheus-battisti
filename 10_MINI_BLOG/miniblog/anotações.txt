@@ -551,9 +551,10 @@ Seção 10: Projeto: MiniBlog (React Router, Hooks, Context, Firebase, Autentica
 -configurado o CSS fo <form> de Register.module.css
 
 125-states do form de cadastro 
--
-
-
+-criado os states dos dados dos inputs do formulário (useState = getter e setter)
+-inserido o value{} com getter de cada state e onChange{} que chama o método setter de cada state em cada input do form
+-criando método de submit do form, handleSubmit()
+-criado condicional de validação, para que, caso os getter de password e confirmPassword sejam diferentes no form, apareça a tag de erro 
 
 
 
