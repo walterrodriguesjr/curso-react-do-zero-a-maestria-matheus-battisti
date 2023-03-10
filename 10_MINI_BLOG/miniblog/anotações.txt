@@ -556,6 +556,15 @@ Seção 10: Projeto: MiniBlog (React Router, Hooks, Context, Firebase, Autentica
 -criando método de submit do form, handleSubmit()
 -criado condicional de validação, para que, caso os getter de password e confirmPassword sejam diferentes no form, apareça a tag de erro 
 
+126-criando hook de autenticação 
+-em src, criada a pasta hooks, dentro, criado o hook useAuthentication.js
+    este recebe os métodos da biblioteca do firebase, useState e useEffect de react 
+    em seguida se exporta 
+    criado o cleanup 
+
+127-registrando usuário no sistema 
+-em useAuthentication.js e register.js, configurado a logica de realizar cadastro de usuario e enviar para o firebase
+
 
 
 
