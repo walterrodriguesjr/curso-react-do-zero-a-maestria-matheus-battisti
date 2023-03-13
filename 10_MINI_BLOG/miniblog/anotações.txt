@@ -565,6 +565,28 @@ Seção 10: Projeto: MiniBlog (React Router, Hooks, Context, Firebase, Autentica
 127-registrando usuário no sistema 
 -em useAuthentication.js e register.js, configurado a logica de realizar cadastro de usuario e enviar para o firebase
 
+128-contexto da autenticação 
+-criado em src, a pasta context, e dentro o arquivo AuthContext.js 
+-em AuthContext.js, criado a lógica para criar metodos que retornam o contexto onde ele for disponibilizado 
+
+129-passando usuário para o contexto 
+-criado estado de loading para a página 
+-criado o useEffect em App.js 
+
+130-links para usuário autenticado 
+-puxando o contexto para o Navbar.js 
+-inserido nas <li> de Navbar.js a condição para que login e register apareçam somente quando o user não existir 
+-criado os arquivos de Dashboard e CreatePost js e css 
+-inseridos seus respectivos Routes em App.js 
+-inseridos no Navbar.js 
+
+131-bloqueando páginas que precisam de autenticação 
+-em App.js, na Route de Login, criado uma condicional, para que, caso não haja o usuário logado, aparece Login, se não, redireciona para Home 
+-feito a mesma lógica na Route de Register 
+-com as Route de CreatePost e Dashboard, foi criada a lógica para que, se o usuário estiver logado poderá acessar, se não, redireciona para Login 
+-configurado About js e css 
+
+132-
 
 
 
