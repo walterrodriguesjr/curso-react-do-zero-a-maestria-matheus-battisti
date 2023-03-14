@@ -586,7 +586,11 @@ Seção 10: Projeto: MiniBlog (React Router, Hooks, Context, Firebase, Autentica
 -com as Route de CreatePost e Dashboard, foi criada a lógica para que, se o usuário estiver logado poderá acessar, se não, redireciona para Login 
 -configurado About js e css 
 
-132-
+132-função de logout 
+-criado em useAuthentication.js, a const com função anônima logout() 
+-inserido no return de useAuthentication
+-em Navbar.js, foi chamado o Sair mediante condicional se user existir (estiver logado)
+-
 
 
 
